@@ -27,11 +27,11 @@ const fooRef = ref()
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+#### TODO: camel option
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+use it in vue-next, when declare a ref variable, check if variable name ends with `ref`
 
 ## Further Reading
 
