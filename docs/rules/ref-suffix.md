@@ -11,17 +11,19 @@ Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+const foo = ref()
 
 ```
+![incorrect screenshot](../master/docs/screenshot/ref-suffix-error.png)
 
 Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+const fooRef = ref()
 
 ```
+![correct screenshot](../master/docs/screenshot/ref-suffix-success.png)
 
 ### Options
 
