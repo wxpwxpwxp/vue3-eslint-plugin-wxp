@@ -14,7 +14,7 @@ Examples of **incorrect** code for this rule:
 const foo = ref()
 
 ```
-![incorrect screenshot](../master/docs/screenshot/ref-suffix-error.png)
+![incorrect screenshot](https://github.com/wxpwxpwxp/vue3-eslint-plugin-wxp/blob/master/docs/screenshot/ref-suffix-error.png?raw=true)
 
 Examples of **correct** code for this rule:
 
@@ -23,7 +23,7 @@ Examples of **correct** code for this rule:
 const fooRef = ref()
 
 ```
-![correct screenshot](../master/docs/screenshot/ref-suffix-success.png)
+![correct screenshot](https://github.com/wxpwxpwxp/vue3-eslint-plugin-wxp/blob/master/docs/screenshot/ref-suffix-success.png?raw=true)
 
 ### Options
 
