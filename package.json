@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vue3-wxp",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "wxp's eslint plugin",
   "keywords": [
     "eslint",
@@ -26,5 +26,6 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "registory": "http://registry.npmjs.org"
 }
