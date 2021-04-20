@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vue3-wxp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wxp's eslint plugin",
   "keywords": [
     "eslint",
