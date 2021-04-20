@@ -10,7 +10,7 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-vue3-wxp`:
+Next, install `eslint-plugin-vue3-wxp` [npm address](https://www.npmjs.com/package/eslint-plugin-vue3-wxp):
 
 ```
 $ npm install eslint-plugin-vue3-wxp --save-dev
