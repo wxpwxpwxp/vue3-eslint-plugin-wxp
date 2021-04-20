@@ -8,7 +8,7 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-const rule = require('../../../lib/rules/vue3-ref-suffix')
+const rule = require('../../../lib/rules/ref-suffix')
 
 const RuleTester = require('eslint').RuleTester
 
@@ -17,7 +17,7 @@ const RuleTester = require('eslint').RuleTester
 // ------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } })
-ruleTester.run('vue3-ref-suffix', rule, {
+ruleTester.run('ref-suffix', rule, {
 
   valid: [
     'const fooRef = ref()'
