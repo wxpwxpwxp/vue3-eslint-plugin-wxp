@@ -3,3 +3,4 @@ docs/
 .gitignore
 .eslintrc.js
 .DS_Store
+pushlish.sh
