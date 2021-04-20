@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-vue3-eslint-ref-suffix-plugin",
+  "name": "eslint-plugin-vue3-wxp",
   "version": "0.0.0",
-  "description": "ref variable ends with ref",
+  "description": "wxp's eslint plugin",
   "keywords": [
     "eslint",
     "eslintplugin",

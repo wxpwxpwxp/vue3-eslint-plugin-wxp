@@ -1,4 +1,4 @@
-# ref variable ends with ref (vue3-ref-suffix)
+# ref variable ends with ref (ref-suffix)
 
 Please describe the origin of the rule here.
 
