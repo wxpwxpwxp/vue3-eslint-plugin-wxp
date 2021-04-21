@@ -10,7 +10,10 @@
   "author": "wxpwxpwxp",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "lint": "eslint --ext .js lib tests",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:ci": "npm run lint -- --max-warnings 0"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
