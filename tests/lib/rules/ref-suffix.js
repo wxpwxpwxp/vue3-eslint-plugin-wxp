@@ -20,7 +20,8 @@ const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } })
 ruleTester.run('ref-suffix', rule, {
 
   valid: [
-    'const fooRef = ref()'
+    'const fooRef = ref()',
+    'const fooRef = computed()'
     // give me some code that won't trigger a warning
   ],
 
@@ -29,6 +30,24 @@ ruleTester.run('ref-suffix', rule, {
       code: 'const foo = ref()',
       errors: [{
         message: 'foo should rename to fooRef'
+      }]
+    },
+    {
+      code: 'let fooRef = ref()',
+      errors: [{
+        message: 'expect const, not let'
+      }]
+    },
+    {
+      code: 'const foo = computed()',
+      errors: [{
+        message: 'foo should rename to fooRef'
+      }]
+    },
+    {
+      code: 'let fooRef = computed()',
+      errors: [{
+        message: 'expect const, not let'
       }]
     }
   ]
