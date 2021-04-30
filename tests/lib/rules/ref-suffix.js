@@ -2,21 +2,21 @@
  * @fileoverview ref variable ends with ref
  * @author wxpwxpwxp
  */
-'use strict'
+'use strict';
 
 // ------------------------------------------------------------------------------
 // Requirements
 // ------------------------------------------------------------------------------
 
-const rule = require('../../../lib/rules/ref-suffix')
+const rule = require('../../../lib/rules/ref-suffix');
 
-const RuleTester = require('eslint').RuleTester
+const RuleTester = require('eslint').RuleTester;
 
 // ------------------------------------------------------------------------------
 // Tests
 // ------------------------------------------------------------------------------
 
-const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } })
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } });
 ruleTester.run('ref-suffix', rule, {
 
   valid: [
@@ -95,4 +95,4 @@ ruleTester.run('ref-suffix', rule, {
       }]
     }
   ]
-})
+});
