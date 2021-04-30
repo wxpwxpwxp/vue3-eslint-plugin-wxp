@@ -26,8 +26,28 @@ const fooRef = ref()
 ![correct screenshot](https://github.com/wxpwxpwxp/vue3-eslint-plugin-wxp/blob/master/docs/screenshot/ref-suffix-success.png?raw=true)
 
 ### Options
+```json
 
-#### TODO: camel option
+{
+  schema: [
+    {
+      enum: ['camelCase', 'snake_case']
+    }
+  ],
+}
+
+```
+#### Usage
+
+```json
+
+{
+  rules: {
+    "vue3-wxp/ref-suffix": ['error', 'camelCase']
+  }
+}
+
+```
 
 ## When Not To Use It
 
