@@ -12,7 +12,7 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2],
-    semi: 'error',
+    semi: ['error', 'always'],
     quotes: ['error', 'single'],
     eqeqeq: 'error',
     'default-case': 'error',
@@ -33,4 +33,4 @@ module.exports = {
     'space-before-blocks': 'warn',
     'semi-spacing': ['error', { before: false, after: true }]
   }
-}
+};
