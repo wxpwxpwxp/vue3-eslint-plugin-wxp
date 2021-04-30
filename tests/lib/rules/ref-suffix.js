@@ -21,7 +21,23 @@ ruleTester.run('ref-suffix', rule, {
 
   valid: [
     'const fooRef = ref()',
-    'const fooRef = computed()'
+    'const fooRef = computed()',
+    {
+      code: 'const fooRef = ref()',
+      options: ['camelCase']
+    },
+    {
+      code: 'const foo_ref = ref()',
+      options: ['snake_case']
+    },
+    {
+      code: 'const fooRef = computed()',
+      options: ['camelCase']
+    },
+    {
+      code: 'const foo_ref = computed()',
+      options: ['snake_case']
+    }
     // give me some code that won't trigger a warning
   ],
 
@@ -48,6 +64,34 @@ ruleTester.run('ref-suffix', rule, {
       code: 'let fooRef = computed()',
       errors: [{
         message: 'expect const, not let'
+      }]
+    },
+    {
+      code: 'const fooRef = computed()',
+      options: ['snake_case'],
+      errors: [{
+        message: 'fooRef should rename to foo_ref'
+      }]
+    },
+    {
+      code: 'const foo_ref = computed()',
+      options: ['camelCase'],
+      errors: [{
+        message: 'foo_ref should rename to fooRef'
+      }]
+    },
+    {
+      code: 'const fooRef = ref()',
+      options: ['snake_case'],
+      errors: [{
+        message: 'fooRef should rename to foo_ref'
+      }]
+    },
+    {
+      code: 'const foo_ref = ref()',
+      options: ['camelCase'],
+      errors: [{
+        message: 'foo_ref should rename to fooRef'
       }]
     }
   ]
